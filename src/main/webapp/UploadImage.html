@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<body background="img/gradient.png">
+    <title>Загрузка изображения</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<font face="Dancing Script, cursive">
+<h1>Téléchargement des images</h1>
+<?php
+
+// Пути загрузки файлов
+$path = 'i/';
+$tmp_path = 'tmp/';
+// Массив допустимых значений типа файла
+$types = array('image/gif', 'image/png', 'image/jpeg');
+// Максимальный размер файла
+$size = 1024000;
+
+// Обработка запроса
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+
+
+
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="picture">
+    <br>
+    <label>Type de téléchargement</label>
+    <br>
+    <select name="file_type">
+        <option value="1">Petite taille</option>
+        <option value="2">Taille absolue</option>
+    </select>
+    <br>
+    <label>Rotation</label>
+    <br>
+    <input type="text" name="file_rotate">
+    <br>
+    <input type="submit" value="Télécharger">
+</font>
+</form>
+</body>
+</html>
